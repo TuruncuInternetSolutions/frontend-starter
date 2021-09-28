@@ -1,0 +1,60 @@
+{
+  "name": "frontend-starter",
+  "description": "Webpack, Sass, Bootstrap, Html, Boilerplate, BrowserSync",
+  "keywords": [],
+  "version": "2.1.0",
+  "author": "Erhan KARACA",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/turuncuweb/frontend-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/turuncuweb/frontend-starter/issues"
+  },
+  "scripts": {
+    "start": "webpack --mode=development --watch",
+    "build": "set NODE_ENV=development && webpack --mode=development",
+    "build:production": "set NODE_ENV=production && webpack --mode=production",
+    "lint:js": "eslint \"./src/scripts/**/*.js\"",
+    "lint:style": "stylelint \"./src/assets/styles/**/*.{css,sass,scss}\"",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "bootstrap": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.6.0",
+    "normalize-scss": "^7.0.1",
+    "sass-material-colors": "^0.0.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/eslint-parser": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "babel-loader": "^8.2.2",
+    "browser-sync": "^2.26.14",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "css-loader": "^5.2.7",
+    "eslint": "^7.26.0",
+    "eslint-loader": "^4.0.2",
+    "file-loader": "^6.2.0",
+    "glob": "^7.1.7",
+    "html-loader": "^2.1.2",
+    "html-srcsets-loader": "^0.5.1",
+    "html-webpack-plugin": "^5.3.1",
+    "image-webpack-loader": "^7.0.1",
+    "mini-css-extract-plugin": "^2.2.0",
+    "node-sass": "^6.0.0",
+    "postcss": "^8.3.0",
+    "postcss-loader": "^6.1.1",
+    "resolve-url-loader": "^4.0.0",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-recommended": "^5.0.0",
+    "stylelint-webpack-plugin": "^3.0.1",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0"
+  }
+}
